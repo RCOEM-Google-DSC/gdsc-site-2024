@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Yarn files
+.yarn/install-state.gz
+.yarn/build-state.yml
+
+# IDE files
+.vscode/*
