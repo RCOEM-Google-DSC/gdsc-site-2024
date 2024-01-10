@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	/* outline: 1px solid red; */
+}
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -64,4 +67,91 @@
 		--input: 0 0% 14.9%;
 		--ring: 0 0% 83.1%;
 	}
+}
+
+.switch_thumb[data-state="checked"] > .sun {
+	display: none;
+}
+
+.switch_thumb[data-state="unchecked"] > .moon {
+	display: none;
+}
+
+/* ! -------------- HAMBURGER MENU ----------------- */
+
+#menu-label {
+	position: relative;
+	padding: 1rem;
+}
+
+.menu,
+.menu::before,
+.menu::after {
+	display: block;
+	background-color: hsl(var(--primary));
+	position: absolute;
+	left: 0;
+	height: 0.2rem;
+	width: 2rem;
+	transition: transform 500ms cubic-bezier(0.25, 1, 0.75, 1);
+	border-radius: 2px;
+	content: "";
+}
+
+.menu {
+	top: 14px;
+	width: 1.5rem;
+}
+
+.menu::before {
+	transform: translateY(-10px);
+}
+
+.menu::after {
+	transform: translateY(10px);
+}
+
+#menu:checked + #menu-label > .menu::before {
+	transform: translateY(0px) rotate(405deg);
+	width: 2rem;
+}
+
+#menu:checked + #menu-label > .menu {
+	background: transparent;
+}
+
+#menu:checked + #menu-label > .menu::after {
+	transform: translateY(0px) rotate(-405deg);
+	width: 2rem;
+}
+
+.ham-nav {
+	position: absolute;
+	transform: translateX(-100%);
+	transition: transform 400ms cubic-bezier(0.25, 1, 0.75, 1);
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	gap: 1rem;
+	width: 100vw;
+	height: 100vh;
+	bottom: -100.5vh;
+	left: 0;
+	background: hsl(var(--card));
+}
+
+.ham-nav > * {
+	transform: translateX(-100%);
+	transition: transform 100ms cubic-bezier(0.23, 1, 0.32, 1);
+	width: 80vw;
+}
+
+#menu:checked ~ .ham-nav {
+	position: absolute;
+	transform: translateX(0);
+}
+
+#menu:checked ~ .ham-nav > * {
+	transform: translateX(0);
 }
