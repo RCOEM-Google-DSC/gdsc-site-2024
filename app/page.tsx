@@ -10,7 +10,15 @@ export default function Home() {
 				Developer Student Clubs are university based community groups for students interested in Google developer
 				technologies.
 			</p>
-			<Button className="uppercase my-6 px-4 rounded-none text-sm border-primary max-md:my-2" variant="outline">
+			<div className="md:hidden w-full flex items-center justify-center">
+				<Button className="uppercase my-6 px-4 rounded-none text-sm border-primary max-md:my-2" variant="outline">
+					Join Us!
+				</Button>
+			</div>
+			<Button
+				className="max-md:hidden uppercase my-6 px-4 rounded-none text-sm border-primary max-md:my-2"
+				variant="outline"
+			>
 				Join Us!
 			</Button>
 			<Image
