@@ -10,13 +10,13 @@ export default function Home() {
 				Developer Student Clubs are university based community groups for students interested in Google developer
 				technologies.
 			</p>
-			<div className="md:hidden w-full flex items-center justify-center">
-				<Button className="uppercase my-6 px-4 rounded-none text-sm border-primary max-md:my-2" variant="outline">
+			<div className="md:hidden w-full flex items-center justify-center py-6">
+				<Button className="uppercase my-6 px-4 rounded-none text-md border-primary max-md:my-2" variant="outline">
 					Join Us!
 				</Button>
 			</div>
 			<Button
-				className="max-md:hidden uppercase my-6 px-4 rounded-none text-sm border-primary max-md:my-2"
+				className="max-md:hidden uppercase my-6 px-4 rounded-none text-md border-primary max-md:my-2"
 				variant="outline"
 			>
 				Join Us!
@@ -26,7 +26,7 @@ export default function Home() {
 				alt="Sidebar"
 				height={200}
 				width={200}
-				className="absolute md:w-1/5 right-0 top-0 z-20 max-md:-right-16 overflow-x-hidden max-md:top-0 max-md:h-80 max-md:-z-10"
+				className="absolute md:w-1/5 right-0 top-0 z-20 max-md:-right-20 overflow-x-hidden max-md:top-8 max-md:h-80 max-md:-z-10"
 			/>
 		</main>
 	);
