@@ -29,7 +29,7 @@ export function Navbar() {
 
 	return (
 		<nav className="sticky top-0 z-20 flex w-[100vw] select-none items-center justify-between gap-16 overflow-visible bg-background p-4 max-md:gap-0">
-			<div className="flex items-center justify-center gap-4 md:hidden">
+			<div className="flex items-center justify-center gap-4 md:hidden max-md:scale-90">
 				<Burger />
 			</div>
 			<div className="flex px-12 justify-start gap-11 text-lg max-md:justify-end max-md:px-4">
