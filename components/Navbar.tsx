@@ -32,7 +32,7 @@ export function Navbar() {
 			<div className="flex items-center justify-center gap-4 md:hidden max-md:scale-90">
 				<Burger />
 			</div>
-			<div className="flex px-12 justify-start gap-11 text-lg max-md:justify-end max-md:px-4">
+			<div className="flex px-12 justify-start gap-11 text-lg max-md:justify-end max-md:px-0">
 				<Link href="/" text="Home" newTab className="max-md:hidden" />
 				<Link href="/" text="Events" className="max-md:hidden" />
 				<Link href="/" text="Team" className="max-md:hidden" />
