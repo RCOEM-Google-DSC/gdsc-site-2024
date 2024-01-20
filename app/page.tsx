@@ -6,12 +6,16 @@ export default function Home() {
 			<Image src="/images/logo.svg" alt="Logo" height={50} width={120} className="w-auto max-md:w-16" />
 			<h1 className="text-5xl tracking-normal my-2 w-1/3 leading-tight text-primary">Google Developer Student Clubs</h1>
 			<p className="text-2xl py-4 text-muted-foreground max-md:text-lg">RCOEM CHAPTER</p>
-			<p className="text-2xl tracking-normal my-2 w-2/4 leading-tight text-muted-foreground max-md:w-3/4 max-md:text-sm">
+			<p className="text-2xl tracking-normal my-2 w-2/4 leading-tight text-muted-foreground max-md:w-full max-md:text-[1.1rem]">
 				Developer Student Clubs are university based community groups for students interested in Google developer
 				technologies.
 			</p>
-			<div className="md:hidden w-full flex items-center justify-center py-6">
-				<Button className="uppercase my-6 px-4 rounded-none text-md border-primary max-md:my-2" variant="outline">
+			<div className="md:hidden w-full flex items-center justify-start py-4">
+				<Button
+					className="uppercase my-6 px-4 rounded-none text-lg border-primary max-md:my-2"
+					variant="outline"
+					size="lg"
+				>
 					Join Us!
 				</Button>
 			</div>
